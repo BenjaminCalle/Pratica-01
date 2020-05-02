@@ -1,0 +1,48 @@
+#Practica_01 --> Benjamin Calle
+
+class Calculator:
+    def __init__(self,modelo,marca,color,codigo_barras):
+        self.modelo = modelo
+        self.marca = marca
+        self.color = color
+        self.codigo_barras = codigo_barras
+
+    def suma(self, a, b):
+        ope = a + b
+        return print('La suma es {}'.format(ope))
+
+    def resta(self, a, b):
+        ope = a - b
+        return print('La resta es {}'.format(ope))
+
+    def multi(self, a, b):
+        ope = a * b
+        return print('La multiplicación es {}'.format(ope))
+
+    def div(self, a, b):
+        ope = a / b
+        return print('La división es {}'.format(ope))
+
+    def datos(self):
+        return print('Calculadora {} marca {} de color {} con codigo {}:'.format(self.modelo,self.marca,self.color,self.codigo_barras))
+
+
+c1 = Calculator('x200','Axes','negro',12356)
+print(c1.datos())
+print(c1.suma(4,5))
+print('-'*20)
+
+c2 = Calculator('x100','casio','blanco',84)
+print(c2.datos())
+print(c2.resta(8,4))
+print('-'*20)
+
+c3 = Calculator('m4','Sony','Azul',789)
+print(c3.datos())
+print(c3.multi(8,4))
+print('-'*20)
+
+c4 = Calculator('das45','samsumg','plomo',7456)
+print(c4.datos())
+print(c4.div(100,5))
+print('-'*20)
