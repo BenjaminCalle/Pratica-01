@@ -1,0 +1,35 @@
+#Practica_02 --> Benjamin Calle
+class Abeja:
+    def __init__(self,nombre,edad,color,numero_colmena):
+        self.nombre = nombre
+        self.edad = edad
+        self.color = color
+        self.numero_colmena = numero_colmena
+
+    def volar(self, altura):
+        return print('La abeja esta volando a {} m de altura'.format(altura))
+
+    def dormir(self,tiempo):
+        return print('La abeja esta dormira por {} minutos'.format(tiempo))
+
+    def polinizar(self,num_plantas):
+        return print('La abeja esta va a polinizar {} plantas'.format(num_plantas))
+
+    def datos(self):
+        return print('Abeja {} tiene {} años, es de color {} y de la colmena {}:'.format(self.nombre,self.edad,self.color,self.numero_colmena))
+
+
+a1 = Abeja('Jhon','22','amarillo',4)
+print(a1.datos())
+print(a1.volar(8))
+print('-'*20)
+
+a2 = Abeja('Kevin','14','naranja',3)
+print(a2.datos())
+print(a2.dormir(4))
+print('-'*20)
+
+a3 = Abeja('Steven','5','rojo',2)
+print(a3.datos())
+print(a3.polinizar(15))
+print('-'*20)
